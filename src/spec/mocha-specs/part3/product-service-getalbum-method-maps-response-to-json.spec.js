@@ -108,7 +108,8 @@ describe("ProductService", () => {
 
     const importRxjs = tsquery(
       ast,
-      "ImportDeclaration StringLiteral[value=rxjs/add/operator/map]"
+      // "ImportDeclaration StringLiteral[value=rxjs/add/operator/map]"
+      "ImportDeclaration StringLiteral[value=rxjs/operators]"
     );
 
     assert(
